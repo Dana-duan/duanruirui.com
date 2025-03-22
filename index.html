@@ -12,158 +12,168 @@
         }
 
         body {
-            font-family: 'PingFang SC', 'Segoe UI', Arial, sans-serif;
-            line-height: 1.6;
-            background: linear-gradient(135deg, #eef2f7 0%, #f9fafb 100%);
-            color: #2d3748;
-            padding-bottom: 20px;
+            font-family: 'Microsoft YaHei', 'PingFang SC', Arial, sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #e6ecf2 0%, #f4f6f9 100%);
+            color: #333333;
+            padding-bottom: 30px;
         }
 
         header {
-            background: linear-gradient(90deg, #2b6cb0 0%, #5dade2 100%);
-            color: white;
-            padding: 40px 20px;
+            background: linear-gradient(90deg, #1e4976 0%, #3b82f6 100%);
+            color: #ffffff;
+            padding: 50px 20px;
             text-align: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
         }
 
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            font-weight: 700;
         }
 
         nav a {
-            color: white;
+            color: #ffffff;
             text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            border-radius: 25px;
-            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 20px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            background-color: rgba(255, 255, 255, 0.25);
             transition: all 0.3s ease;
-            font-size: 1em;
-        }
-
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.35);
-            transform: translateY(-3px);
-        }
-
-        .box {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            margin: 25px auto;
-            max-width: 950px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-            transition: transform 0.2s ease;
-        }
-
-        .box:hover {
-            transform: translateY(-6px);
-        }
-
-        .box h2 {
-            color: #2b6cb0;
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-
-        .box h3 {
-            color: #4a5568;
-            margin: 20px 0 12px;
-            font-size: 1.4em;
-        }
-
-        .box h4 {
-            color: #718096;
-            margin: 15px 0 8px;
-            font-size: 1.2em;
-        }
-
-        .box a {
-            color: #4299e1;
-            text-decoration: none;
+            font-size: 1.1em;
             font-weight: 600;
         }
 
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-4px);
+        }
+
+        .box {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 35px;
+            margin: 30px auto;
+            max-width: 950px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-8px);
+        }
+
+        .box h2 {
+            color: #1e4976;
+            margin-bottom: 25px;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        .box h3 {
+            color: #374151;
+            margin: 25px 0 15px;
+            font-size: 1.6em;
+            font-weight: 600;
+        }
+
+        .box h4 {
+            color: #4b5563;
+            margin: 20px 0 10px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .box a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
         .box a:hover {
-            color: #2b6cb0;
+            color: #1e4976;
             text-decoration: underline;
         }
 
         .box p {
-            color: #718096;
-            font-size: 1.1em;
-            text-indent: 2em; /* 添加首行缩进 */
+            color: #4b5563;
+            font-size: 1.15em;
+            text-indent: 2em;
         }
 
         .box ul {
             list-style: none;
-            padding-left: 20px;
+            padding-left: 25px;
         }
 
         .box ul li {
             position: relative;
-            margin: 10px 0;
+            margin: 12px 0;
+            font-size: 1.15em;
+            color: #4b5563;
         }
 
         .box ul li:before {
             content: "•";
-            color: #4299e1;
+            color: #2563eb;
             position: absolute;
-            left: -15px;
+            left: -20px;
+            font-size: 1.5em;
         }
 
         .qrcode-box {
-            background: white;
-            border-radius: 15px;
-            padding: 25px;
-            margin: 25px auto;
-            max-width: 700px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 950px; /* 与上面的box宽度一致 */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             text-align: center;
         }
 
         .qrcode-box h2 {
-            color: #2b6cb0;
-            font-size: 1.8em;
-            margin-bottom: 20px;
+            color: #1e4976;
+            font-size: 2em;
+            margin-bottom: 25px;
+            font-weight: 700;
         }
 
         .qrcode-box img {
-            max-width: 200px;
+            max-width: 250px;
             height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            margin: 10px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin: 15px;
         }
 
         footer {
-            background: #2d3748;
-            color: #e2e8f0;
+            background: #1f2937;
+            color: #d1d5db;
             text-align: center;
-            padding: 50px 20px;
-            margin-top: 50px;
-            font-size: 1.2em;
+            padding: 60px 20px;
+            margin-top: 60px;
+            font-size: 1.25em;
         }
 
         footer p {
-            margin-bottom: 20px;
-            font-size: 1.3em;
+            margin-bottom: 25px;
+            font-size: 1.4em;
+            font-weight: 500;
         }
 
         footer a {
-            color: #63b3ed;
+            color: #60a5fa;
             text-decoration: none;
-            margin: 0 20px;
-            font-weight: 500;
-            font-size: 1.2em;
+            margin: 0 25px;
+            font-weight: 600;
+            font-size: 1.25em;
             transition: color 0.3s ease;
         }
 
         footer a:hover {
-            color: #90cdf4;
+            color: #93c5fd;
             text-decoration: underline;
         }
     </style>
@@ -183,7 +193,7 @@
         <section>
             <h2>关于我</h2>
             <h4>自我介绍</h4>
-            <p>其其实“我是谁”这个问题，可以上升到哲学的高度——我是谁？我身处何处？不过，放下哲学的思辨，回到现实的层面，我来简单聊聊自己。我叫Dana，一个没有编程基础的人，却选择学习编码。为什么？因为我想在AI时代打好基础，迎接这个充满可能的未来。</p>
+            <p>其实“我是谁”这个问题，可以上升到哲学的高度——我是谁？我身处何处？不过，放下哲学的思辨，回到现实的层面，我来简单聊聊自己。我叫Dana，一个没有编程基础的人，却选择学习编码。为什么？因为我想在AI时代打好基础，迎接这个充满可能的未来。</p>
             
             <h4>学习目标</h4>
             <p>在AI时代，很多人可能会焦虑：我们会不会被它取代？这无疑是一个值得深思的大课题。但对我来说，当下更关心的是：我能不能掌握这些新工具？能不能借助它们，去探索自己能力的边界？这就是我现在的目标——拥抱变化，突破自我。</p>
@@ -235,8 +245,8 @@
 
     <div class="qrcode-box">
         <h2>我的二维码</h2>
-        <img src="/Users/duanruirui/Desktop/WechatIMG119.jpg" alt="Dana的二维码">
-        <img src="/Users/duanruirui/Desktop/WechatIMG138.jpg" alt="Dana的二维码">
+        <img src="/Users/duanruirui/duanruirui.com/WechatIMG119.jpg" alt="yuanfengkeji ">
+        <img src="/Users/duanruirui/duanruirui.com/WechatIMG138.jpg" alt="weixin gongzhonghao ">
     </div>
 
     <footer>
