@@ -5,120 +5,165 @@
     <title>探索计算机小白零基础学习编程记录</title>
     <style>
         /* 全局样式 */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #eef2f7 0%, #f9fafb 100%);
+            color: #2d3748;
+            padding-bottom: 20px;
         }
 
         header {
-            background-color: #2196F3; 
+            background: linear-gradient(90deg, #2b6cb0 0%, #5dade2 100%);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
-            padding: 5px 10px;
-            border-radius: 5px;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 25px;
             background-color: rgba(255, 255, 255, 0.2);
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            font-size: 1em;
         }
 
         nav a:hover {
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(255, 255, 255, 0.35);
+            transform: translateY(-3px);
         }
 
-        /* 盒子模型样式 */
         .box {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px auto;
+            max-width: 950px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-6px);
         }
 
         .box h2 {
-            color: #2196F3; 
-            margin-top: 0;
+            color: #2b6cb0;
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        .box h3 {
+            color: #4a5568;
+            margin: 20px 0 12px;
+            font-size: 1.4em;
+        }
+
+        .box h4 {
+            color: #718096;
+            margin: 15px 0 8px;
+            font-size: 1.2em;
         }
 
         .box a {
-            color: #2196F3; 
+            color: #4299e1;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
         }
 
         .box a:hover {
+            color: #2b6cb0;
             text-decoration: underline;
         }
 
-        /* 表单样式 */
-        form {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 600px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .box p {
+            color: #718096;
+            font-size: 1.1em;
+            text-indent: 2em; /* 添加首行缩进 */
         }
 
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
+        .box ul {
+            list-style: none;
+            padding-left: 20px;
         }
 
-        form input[type="text"],
-        form input[type="email"],
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
+        .box ul li {
+            position: relative;
+            margin: 10px 0;
         }
 
-        form input[type="submit"] {
-            background-color: #2196F3; /* 改为蓝色 */
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
+        .box ul li:before {
+            content: "•";
+            color: #4299e1;
+            position: absolute;
+            left: -15px;
         }
 
-        form input[type="submit"]:hover {
-            background-color: #1e88e5; /* 深蓝色悬停效果 */
-        }
-
-        /* 页脚样式 */
-        footer {
-            background-color: #333;
-            color: white;
+        .qrcode-box {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px auto;
+            max-width: 700px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+        }
+
+        .qrcode-box h2 {
+            color: #2b6cb0;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .qrcode-box img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin: 10px;
+        }
+
+        footer {
+            background: #2d3748;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 50px;
+            font-size: 1.2em;
+        }
+
+        footer p {
+            margin-bottom: 20px;
+            font-size: 1.3em;
         }
 
         footer a {
-            color: #2196F3;
+            color: #63b3ed;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
         }
 
         footer a:hover {
+            color: #90cdf4;
             text-decoration: underline;
         }
     </style>
@@ -137,9 +182,13 @@
     <div class="box">
         <section>
             <h2>关于我</h2>
-            <p>其实这是一个哲学问题,我是谁,我在哪.那回到非哲学的版块,我来探讨下我是谁.名字叫Dana,没有编程基础来学习编码,是为了在AI时代把基础打好。</p>
-            <p>AI时代可能很多人会焦虑是不是会被Ta取代,这个也是一个很大的课题.不过当下的自己关注的是我能不能掌握新工具,能不能在新工具的帮助下探索个人能力的边界。</p>
-            <p>我关注的几个要点：</p>
+            <h4>自我介绍</h4>
+            <p>其其实“我是谁”这个问题，可以上升到哲学的高度——我是谁？我身处何处？不过，放下哲学的思辨，回到现实的层面，我来简单聊聊自己。我叫Dana，一个没有编程基础的人，却选择学习编码。为什么？因为我想在AI时代打好基础，迎接这个充满可能的未来。</p>
+            
+            <h4>学习目标</h4>
+            <p>在AI时代，很多人可能会焦虑：我们会不会被它取代？这无疑是一个值得深思的大课题。但对我来说，当下更关心的是：我能不能掌握这些新工具？能不能借助它们，去探索自己能力的边界？这就是我现在的目标——拥抱变化，突破自我。</p>
+            
+            <h4>关注要点</h4>
             <ul>
                 <li>基础知识理解的必要性</li>
                 <li>具备框架性思考的重要性</li>
@@ -150,12 +199,13 @@
 
     <div class="box">
         <section>
-            <h2>最新文章</h2>
+            <h2>编程学习之路</h2>
             <article>
                 <h3>首次使用VScode工具编写代码</h3>
                 <p>2025年1月21日</p>
-                <p>在历经10天关于html基础信息的学习之后,开始了第一次使用开发工具进行基础信息的录入,本文会分享我首次使用开发工具写代码的体验与感受。</p>
-                <a href="https://mp.weixin.qq.com/s/KLS4qgEwyh1a2pI4jq7Hbg?token=707248829&lang=zh_CN">阅读全文</a>
+                <h4>经历与感受</h4>
+                <p>在历经10天关于HTML基础信息的学习之后，开始了第一次使用开发工具进行基础信息的录入，本文会分享我首次使用开发工具写代码的体验与感受。</p>
+                <p><a href="https://mp.weixin.qq.com/s/KLS4qgEwyh1a2pI4jq7Hbg?token=707248829&lang=zh_CN">阅读全文</a></p>
             </article>
         </section>
     </div>
@@ -165,30 +215,37 @@
             <article>
                 <h3>学习完HTML一些基础信息后的感受</h3>
                 <p>2025年1月20日</p>
-                <p>在学习HTML相关信息之前,有一个15个很具象的任务,在完成任务的过程中,对一些概念的理解始终颠覆自己的认知。</p>
-                <a href="https://mp.weixin.qq.com/s/MFk24VpNdlH4ixULIjSyKg?token=707248829&lang=zh_CN">阅读全文</a>
+                <h4>学习心得</h4>
+                <p><a href="https://mp.weixin.qq.com/s/MFk24VpNdlH4ixULIjSyKg?token=707248829&lang=zh_CN">阅读全文</a></p>
             </article>
         </section>
     </div>
 
     <div class="box">
-        <h2>联系我</h2>
-        <form>
-            <label for="name">称呼:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">邮箱:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="message">留言:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
-            <input type="submit" value="提交">
-        </form>
+        <section>
+            <article>
+                <h3>学习CSS相关内容的总结</h3>
+                <p>2025年3月17日</p>
+                <h4>学习进展</h4>
+                <p>计算机小白学习编程第66天，css属性“皮毛”学习分享。</p>
+                <p><a href="https://mp.weixin.qq.com/s/csESeTCRcoFnjQKWBVdoKQ">阅读全文</a></p>
+            </article>
+        </section>
+    </div>
+
+    <div class="qrcode-box">
+        <h2>我的二维码</h2>
+        <img src="/Users/duanruirui/Desktop/WechatIMG119.jpg" alt="Dana的二维码">
+        <img src="/Users/duanruirui/Desktop/WechatIMG138.jpg" alt="Dana的二维码">
     </div>
 
     <footer>
-        <p>2025技术博客,保留所有权利</p>
-        <a href="https://github.com/Dana-duan/blog">Github blog主页</a>
-        <a href="https://mp.weixin.qq.com/s/7r0umBJnR3tmsmH--ab04w?token=707248829&lang=zh_CN&poc_token=HPbVkGejMwuOamFvfGx-HTRWWoY4YlGKv4wQIgHY">微信公众号</a>
-        <a href="https://weibo.com/u/5364576665">微博</a>
+        <p>2025技术博客，保留所有权利</p>
+        <div>
+            <a href="https://github.com/Dana-duan/blog">Github blog主页</a>
+            <a href="https://mp.weixin.qq.com/s/7r0umBJnR3tmsmH--ab04w?token=707248829&lang=zh_CN&poc_token=HPbVkGejMwuOamFvfGx-HTRWWoY4YlGKv4wQIgHY">微信公众号</a>
+            <a href="https://weibo.com/u/5364576665">微博</a>
+        </div>
     </footer>
 </body>
 </html>
